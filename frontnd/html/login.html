@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangKu - Login</title>
+    <!-- Menghubungkan CSS Eksternal -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- Wrapper Responsif -->
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            
+            <!-- Tombol Kembali ke Halaman Utama -->
+            <a href="index.html" class="back-link">&larr; Kembali ke Beranda</a>
+
+            <div class="auth-header">
+                <h2>📘 RuangKu</h2>
+                <p>Masuk untuk melanjutkan reservasi</p>
+            </div>
+
+            <!-- Form Login -->
+            <form id="formLogin">
+                <div class="form-group">
+                    <label for="username">Email atau Username</label>
+                    <input type="text" id="username" placeholder="Masukkan email atau username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Masukkan password" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Masuk</button>
+
+                <div class="auth-links">
+                    <a href="#" onclick="alert('Fitur pemulihan sandi dikirim.')">Lupa password?</a>
+                </div>
+
+                <hr class="divider">
+
+                <!-- Tombol Alternatif -->
+                <button type="button" class="btn-google" onclick="alert('Simulasi login dengan Google.')">
+                    <span>G</span> Masuk dengan Google
+                </button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Menghubungkan JavaScript Eksternal -->
+    <script src="login.js"></script>
+</body>
+</html>
