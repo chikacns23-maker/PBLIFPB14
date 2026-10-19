@@ -22,16 +22,16 @@ body {
     flex-direction: column;
 }
 
-/* Container Beranda Full-Width (Menyesuaikan Device Sepenuhnya) */
+/* Container Beranda Melebar Penuh (Full-Width) untuk Laptop & PC */
 .app-container {
     width: 100%;
-    max-width: 100%; /* Membuka batasan agar melebar penuh */
+    max-width: 100%;
     min-height: 100vh;
     background-color: #ffffff;
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 30px 40px; /* Padding lebih luas untuk layar laptop */
+    padding: 35px 50px;
     box-sizing: border-box;
     overflow-y: auto;
 }
@@ -47,7 +47,7 @@ body {
 .beranda-header h3 {
     margin: 0;
     color: #0d47a1;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .beranda-header p {
@@ -57,7 +57,7 @@ body {
 }
 
 .notification-icon {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     cursor: pointer;
     background: #f1f3f5;
     padding: 12px;
@@ -113,7 +113,7 @@ body {
 .section-title h4 {
     margin: 0;
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 .section-title a {
@@ -126,13 +126,13 @@ body {
     text-decoration: underline;
 }
 
-/* Daftar Kartu Ruangan (Grid 3 Kolom agar optimal di layar lebar laptop) */
+/* Daftar Kartu Ruangan (Tampil dalam Grid 3 Kolom di Laptop) */
 .room-list {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
-    margin-bottom: 90px; /* Ruang agar tidak tertutup nav bawah */
+    margin-bottom: 90px; /* Ruang agar konten tidak tertutup nav bawah */
 }
 
 .room-card {
@@ -149,7 +149,7 @@ body {
 .room-card:hover {
     border-color: #1976d2;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .room-info strong {
@@ -159,7 +159,7 @@ body {
 
 .room-info p {
     margin: 8px 0;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #666;
 }
 
@@ -196,7 +196,7 @@ body {
     cursor: not-allowed;
 }
 
-/* Navigasi Bawah (Bottom Navigation Bar) yang melebar penuh */
+/* Navigasi Bawah (Bottom Navigation Bar) yang Melebar Penuh */
 .bottom-nav {
     position: fixed;
     bottom: 0;
@@ -207,7 +207,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 14px 0;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.03);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.03);
     z-index: 100;
 }
 
@@ -225,4 +225,14 @@ body {
 .nav-item.active {
     color: #1976d2;
     font-weight: bold;
+}
+
+/* Media Queries untuk HP / Layar Kecil */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 20px;
+    }
+    .room-list {
+        grid-template-columns: 1fr;
+    }
 }
