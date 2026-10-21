@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangKu - Beranda</title>
+    <!-- Menghubungkan CSS Eksternal -->
+    <link rel="stylesheet" href="../css/beranda.css">
+</head>
+<body>
+
+    <!-- Wrapper Responsif -->
+    <div class="app-wrapper">
+        <div class="app-container">
+
+            <!-- Header Beranda (Sapaan & Notifikasi) -->
+            <header class="beranda-header">
+                <div>
+                    <h3 id="sapaanUser">Halo, Pengguna 👋</h3>
+                    <p>Selamat datang di RuangKu</p>
+                </div>
+                <div class="notification-icon" onclick="tampilkanNotifikasi()" title="Notifikasi">🔔</div>
+            </header>
+
+            <!-- Kotak Pencarian Ruang (Live Search) -->
+            <div class="search-box">
+                <input type="text" id="inputCari" placeholder="🔍 Cari ruang belajar..." onkeyup="cariRuangan()">
+            </div>
+
+            <!-- Banner Informasi / Motivasi -->
+            <div class="promo-banner">
+                <p>💡 Waktu belajar yang baik adalah investasi untuk masa depanmu</p>
+            </div>
+
+            <!-- Bagian Daftar Ruang Tersedia -->
+            <div class="section-title">
+                <h4>Daftar Ruang Tersedia</h4>
+                <a href="#" onclick="alert('Menampilkan seluruh ruangan.'); return false;">Lihat Semua</a>
+            </div>
+
+            <!-- List Ruangan -->
+            <div class="room-list" id="roomListContainer">
+                
+                <!-- Item Ruang A1 -->
+                <div class="room-card" data-name="ruang a1">
+                    <div class="room-info">
+                        <strong>Ruang A1</strong>
+                        <p>👥 Kapasitas 10 orang</p>
+                        <span class="status-tersedia">● Tersedia</span>
+                    </div>
+                    <button class="btn-reservasi" onclick="pilihRuangan('Ruang A1')">Reservasi</button>
+                </div>
+
+                <!-- Item Ruang A2 -->
+                <div class="room-card" data-name="ruang a2">
+                    <div class="room-info">
+                        <strong>Ruang A2</strong>
+                        <p>👥 Kapasitas 8 orang</p>
+                        <span class="status-tersedia">● Tersedia</span>
+                    </div>
+                    <button class="btn-reservasi" onclick="pilihRuangan('Ruang A2')">Reservasi</button>
+                </div>
+
+                <!-- Item Ruang B1 -->
+                <div class="room-card" data-name="ruang b1">
+                    <div class="room-info">
+                        <strong>Ruang B1</strong>
+                        <p>👥 Kapasitas 12 orang</p>
+                        <span class="status-digunakan">● Digunakan</span>
+                    </div>
+                    <button class="btn-reservasi disabled" onclick="alert('Maaf, ruangan sedang digunakan.')">Reservasi</button>
+                </div>
+
+            </div>
+
+            <!-- Navigasi Bawah (Bottom Navigation Bar) -->
+            <nav class="bottom-nav">
+                <div class="nav-item active" onclick="pindahMenu('beranda')">
+                    <span>🏠</span><br>Beranda
+                </div>
+                <div class="nav-item" onclick="pindahMenu('reservasi')">
+                    <span>📅</span><br>Reservasi Saya
+                </div>
+                <div class="nav-item" onclick="pindahMenu('profil')">
+                    <span>👤</span><br>Profil
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- Menghubungkan JavaScript Eksternal -->
+    <script src="../js/beranda.js"></script>
+    <!-- Navigasi Menu Bawah (Akses Cepat ke Mana Saja) -->
+<div class="bottom-nav">
+    <a href="beranda.html" class="nav-item">
+        <span>🏠</span>
+        <span>Beranda</span>
+    </a>
+    <a href="reservasi-saya.html" class="nav-item">
+        <span>📅</span>
+        <span>Reservasi Saya</span>
+    </a>
+    <a href="profil.html" class="nav-item">
+        <span>👤</span>
+        <span>Profil</span>
+    </a>
+</div>
+</body>
+</html>

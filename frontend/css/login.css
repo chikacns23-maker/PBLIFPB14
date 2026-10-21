@@ -1,0 +1,194 @@
+/* Pengaturan Dasar & Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrapper Halaman Login Full Layar */
+.auth-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Kartu Kotak Login yang Proporsional dan Rapi di Layar Lebar */
+.auth-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 480px; /* Lebar maksimal yang pas untuk form login di laptop */
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Tautan Kembali */
+.back-link {
+    display: inline-block;
+    color: #1976d2;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Header Login */
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header h2 {
+    color: #0d47a1;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.auth-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+/* Tombol Utama */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 5px;
+}
+
+.btn-submit:hover {
+    background-color: #0d47a1;
+}
+
+/* Tautan Tambahan di Bawah Form */
+.auth-links {
+    text-align: right;
+    margin-top: 12px;
+}
+
+.auth-links a {
+    color: #1976d2;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Pembatas */
+.divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 25px 0;
+}
+
+/* Tombol Google */
+.btn-google {
+    width: 100%;
+    padding: 13px;
+    background-color: #ffffff;
+    color: #444;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: background 0.3s;
+}
+
+.btn-google span {
+    color: #db4437;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-google:hover {
+    background-color: #f9f9f9;
+}
+
+/* Footer Card */
+.auth-footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.auth-footer a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries untuk Layar Handphone (Smartphone) */
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 20px;
+        box-shadow: none;
+        background-color: transparent;
+        max-width: 100%;
+    }
+    body {
+        background-color: #ffffff;
+    }
+}

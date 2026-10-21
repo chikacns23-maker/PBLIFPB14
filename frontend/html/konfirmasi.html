@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangKu - Reservasi Berhasil</title>
+    <!-- Menghubungkan CSS Konfirmasi -->
+    <link rel="stylesheet" href="../css/konfirmasi.css">
+</head>
+<body>
+
+    <!-- Wrapper Full Layar -->
+    <div class="app-wrapper">
+        <div class="app-container">
+
+            <!-- Ilustrasi / Ikon Sukses -->
+            <div class="success-illustration">
+                <div class="icon-circle">
+                    <span class="check-icon">✓</span>
+                </div>
+            </div>
+
+            <!-- Judul Konfirmasi -->
+            <div class="confirmation-header">
+                <h2>Reservasi Berhasil!</h2>
+                <p id="subJudulPesan">Ruang A1 telah berhasil dipesan.</p>
+            </div>
+
+            <!-- Detail Ringkasan Reservasi -->
+            <div class="details-card">
+                <div class="detail-item">
+                    <span class="detail-label">📅 Tanggal</span>
+                    <span class="detail-value" id="valTanggal">25 September 2025</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">⏰ Waktu</span>
+                    <span class="detail-value" id="valWaktu">09:00 - 11:00</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">👥 Jumlah Orang</span>
+                    <span class="detail-value" id="valJumlahOrang">3 orang</span>
+                </div>
+            </div>
+
+            <!-- Tombol Aksi Navigasi -->
+            <div class="action-buttons">
+                <a href="reservasi-saya.html" class="btn-link">
+                    <button class="btn-primary" type="button">Lihat Detail</button>
+                </a>
+                <a href="beranda.html" class="btn-link">
+                    <button class="btn-secondary" type="button">Kembali ke Beranda</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Menghubungkan JavaScript Konfirmasi -->
+    <script src="../js/konfirmasi.js"></script>
+    <!-- Navigasi Menu Bawah (Akses Cepat ke Mana Saja) -->
+<div class="bottom-nav">
+    <a href="beranda.html" class="nav-item">
+        <span>🏠</span>
+        <span>Beranda</span>
+    </a>
+    <a href="reservasi-saya.html" class="nav-item">
+        <span>📅</span>
+        <span>Reservasi Saya</span>
+    </a>
+    <a href="profil.html" class="nav-item">
+        <span>👤</span>
+        <span>Profil</span>
+    </a>
+</div>
+</body>
+</html>

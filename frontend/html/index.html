@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangKu - Reservasi Ruang Belajar Kampus</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR ATAS -->
+    <header class="navbar">
+        <div class="nav-brand">
+            <span class="brand-icon">🏛️</span>
+            <span class="brand-text">RuangKu</span>
+        </div>
+        <nav class="nav-menu">
+            <a href="#beranda">Beranda</a>
+            <a href="#fitur">Fitur</a>
+            <a href="#tim">Tim</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="btn-theme" id="themeToggle">🌙</button>
+            
+        </div>
+    </header>
+
+    <!-- SECTION 1: BERANDA -->
+    <section id="beranda" class="hero-section">
+        <div class="hero-card">
+            <div class="hero-icon">📚</div>
+            <h1>Selamat Datang di RuangKu</h1>
+            <p>Pesan, atur, dan pantau peminjaman ruang belajar kampusmu dengan lebih mudah dan cepat!</p>
+            <a href="#fitur" class="btn-hero">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <!-- SECTION 2: FITUR UNGGULAN -->
+    <section id="fitur" class="features-section">
+        <h2 class="section-title">Fitur Unggulan RuangKu</h2>
+        <p class="section-subtitle">Semua yang kamu butuhkan untuk reservasi ruang belajar kampus, di satu tempat.</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3>Pemesanan Ruangan</h3>
+                <p>Pilih dan pesan ruangan belajar sesuai jadwal diskusi serta kapasitas kelompokmu dengan cepat.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Cek Ketersediaan</h3>
+                <p>Pantau status ketersediaan ruang belajar secara langsung tanpa perlu datang ke lokasi gedung.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Riwayat Reservasi</h3>
+                <p>Lihat ringkasan jadwal peminjaman aktif dan riwayat pemesanan ruangan yang telah disetujui.</p>
+            </div>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="registrasi.html" class="btn-daftar">Daftar Gratis</a>
+            <a href="login.html" class="btn-masuk">Sudah punya akun? Masuk</a>
+        </div>
+    </section>
+
+    <!-- SECTION 3: TIM PBL RUANGKU -->
+    <section id="tim" class="team-section">
+        <h2 class="section-title">Tim PBL RuangKu</h2>
+        <p class="section-subtitle">Orang-orang di balik pembuatan aplikasi RuangKu.</p>
+        <div class="team-container" style="text-align: center; padding: 20px; color: #cbd5e1;">
+            <p>Tim Pengembang Aplikasi Reservasi Ruang Belajar Kampus berbasis Web.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 4: KONTAK -->
+    <section id="kontak" class="contact-section">
+        <div class="contact-card">
+            <h3 style="color: #93c5fd; margin-bottom: 20px; font-size: 1.5rem;">Hubungi Kami</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label>Alamat Email</label>
+                    <input type="email" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="form-group">
+                    <label>Pesan</label>
+                    <textarea rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 RuangKu - Sistem Reservasi Ruang Belajar Kampus</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

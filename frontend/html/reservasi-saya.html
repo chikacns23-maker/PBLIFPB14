@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangKu - Reservasi Saya</title>
+    <link rel="stylesheet" href="../css/reservasi-saya.css">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <div class="app-container">
+
+            <!-- Header Halaman -->
+            <div class="top-header">
+                <h2>Reservasi Saya</h2>
+            </div>
+
+            <!-- Tab Navigasi (Aktif / Riwayat) -->
+            <div class="tab-navigation">
+                <button class="tab-btn active">Aktif</button>
+                <button class="tab-btn">Riwayat</button>
+            </div>
+
+            <!-- Daftar List Reservasi -->
+            <div class="reservation-list" id="listReservasiContainer">
+                <!-- Data akan dimuat secara otomatis lewat JavaScript dari localStorage -->
+            </div>
+
+            <!-- Navigasi Menu Bawah (Bottom Navbar) -->
+            <div class="bottom-nav">
+                <a href="beranda.html" class="nav-item">
+                    <span>🏠</span>
+                    <span>Beranda</span>
+                </a>
+                <a href="reservasi-saya.html" class="nav-item active">
+                    <span>📅</span>
+                    <span>Reservasi Saya</span>
+                </a>
+                <a href="profil.html" class="nav-item">
+                    <span>👤</span>
+                    <span>Profil</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/reservasi-saya.js"></script>
+</body>
+</html>

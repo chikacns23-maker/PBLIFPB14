@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangKu - Formulir Reservasi</title>
+    <!-- Menghubungkan CSS Eksternal -->
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+    <!-- Wrapper Full Layar -->
+    <div class="app-wrapper">
+        <div class="app-container">
+
+            <!-- Tombol Kembali -->
+            <div class="form-top-bar">
+                <a href="detail.html" class="back-link">&larr; Kembali ke Detail Ruangan</a>
+            </div>
+
+            <!-- Header Formulir -->
+            <div class="form-header">
+                <h2>Formulir Reservasi Ruangan</h2>
+                <p>Silakan isi data peminjaman di bawah ini dengan benar</p>
+            </div>
+
+            <!-- Form Input Reservasi -->
+            <form id="formReservasi">
+                
+                <div class="form-group">
+                    <label for="namaRuangInput">Ruangan yang Dipilih</label>
+                    <input type="text" id="namaRuangInput" readonly class="input-disabled">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="namaPeminjam">Nama Lengkap</label>
+                        <input type="text" id="namaPeminjam" placeholder="Masukkan nama peminjam" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nimPeminjam">NIM / ID Anggota</label>
+                        <input type="text" id="nimPeminjam" placeholder="Masukkan NIM atau ID" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tanggalReservasi">Tanggal Peminjaman</label>
+                        <input type="date" id="tanggalReservasi" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jamMulai">Waktu Mulai</label>
+                        <input type="time" id="jamMulai" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="keperluan">Keperluan / Kegiatan</label>
+                    <textarea id="keperluan" rows="4" placeholder="Contoh: Diskusi kelompok mata kuliah Pemrograman Web" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit-reservasi">Konfirmasi & Kirim Reservasi</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Menghubungkan JavaScript Eksternal -->
+    <script src="../js/form.js"></script>
+</body>
+</html>

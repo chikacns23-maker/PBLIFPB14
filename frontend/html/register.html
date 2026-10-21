@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangKu - Daftar Akun</title>
+    <!-- Menghubungkan CSS Eksternal -->
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+
+    <!-- Wrapper Responsif -->
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            
+            <!-- Tombol Kembali ke Halaman Login -->
+            <a href="login.html" class="back-link">&larr; Kembali ke Login</a>
+
+            <div class="auth-header">
+                <h2>📘 RuangKu</h2>
+                <p>Buat akun baru untuk mulai menggunakan RuangKu</p>
+            </div>
+
+            <!-- Form Pendaftaran -->
+            <form id="formRegister">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="nama@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Buat username unik" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Buat password baru" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="konfirmasi">Konfirmasi Password</label>
+                    <input type="password" id="konfirmasi" placeholder="Ulangi password" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Daftar Sekarang</button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Menghubungkan JavaScript Eksternal -->
+    <script src="../js/register.js"></script>
+</body>
+</html>
