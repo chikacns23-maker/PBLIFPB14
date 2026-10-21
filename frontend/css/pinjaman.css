@@ -1,0 +1,171 @@
+/* Reset & Pengaturan Dasarnya */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrapper Full Layar */
+.app-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container Penuh (Full-Width di Laptop) */
+.app-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+/* Header & Tombol Back */
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-back {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.btn-back:hover {
+    color: #1976d2;
+}
+
+.top-bar h2 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+/* Card Ringkasan Ruangan (Gambar + Info) */
+.room-summary-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 16px;
+    gap: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.room-image {
+    width: 90px;
+    height: 70px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+.room-details h3 {
+    font-size: 1.15rem;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.capacity-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.status-badge {
+    font-size: 0.85rem;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+/* Form Body & Inputs */
+.form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    color: #333;
+    transition: all 0.2s;
+    outline: none;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #1976d2;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+}
+
+/* Tombol Aksi Konfirmasi */
+.action-footer {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0d47a1;
+}
+
+/* Tampilan Responsif HP */
+@media (max-width: 480px) {
+    .app-container {
+        padding: 20px 16px;
+    }
+}

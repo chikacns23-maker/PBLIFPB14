@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangKu - Form Reservasi</title>
+    <link rel="stylesheet" href="../css/pinjaman.css">
+</head>
+<body>
+
+    <!-- Wrapper Full Layar -->
+    <div class="app-wrapper">
+        <div class="app-container">
+
+            <!-- Bar Atas / Header Navigasi -->
+            <div class="top-bar">
+                <a href="detail.html" class="btn-back">&larr;</a>
+                <h2>Reservasi Ruang</h2>
+            </div>
+
+            <!-- Card Informasi Ruangan yang Dipilih -->
+            <div class="room-summary-card">
+                <div class="room-image">
+                    <!-- Placeholder Gambar Ruangan -->
+                    <div class="image-placeholder">🏛️</div>
+                </div>
+                <div class="room-details">
+                    <h3 id="namaRuangDisplay">Ruang A1</h3>
+                    <p class="capacity-text" id="kapasitasDisplay">Kapasitas 10 orang</p>
+                    <span class="status-badge" id="statusDisplay">● Tersedia</span>
+                </div>
+            </div>
+
+            <!-- Form Input Reservasi -->
+            <form id="formPeminjaman" class="form-body">
+
+                <!-- Input Tanggal -->
+                <div class="form-group">
+                    <label for="tanggalReservasi">Tanggal</label>
+                    <div class="input-with-icon">
+                        <input type="date" id="tanggalReservasi" required>
+                    </div>
+                </div>
+
+                <!-- Input Waktu / Jam -->
+                <div class="form-group">
+                    <label for="waktuReservasi">Waktu</label>
+                    <select id="waktuReservasi" required>
+                        <option value="" disabled selected>Pilih Jam Peminjaman</option>
+                        <option value="08:00 - 10:00">08:00 - 10:00</option>
+                        <option value="09:00 - 11:00">09:00 - 11:00</option>
+                        <option value="10:00 - 12:00">10:00 - 12:00</option>
+                        <option value="13:00 - 15:00">13:00 - 15:00</option>
+                        <option value="15:00 - 17:00">15:00 - 17:00</option>
+                    </select>
+                </div>
+
+                <!-- Input Jumlah Orang -->
+                <div class="form-group">
+                    <label for="jumlahOrang">Jumlah Orang</label>
+                    <select id="jumlahOrang" required>
+                        <option value="" disabled selected>Pilih Jumlah Anggota</option>
+                        <option value="1 orang">1 orang</option>
+                        <option value="2 orang">2 orang</option>
+                        <option value="3 orang">3 orang</option>
+                        <option value="4-6 orang">4 - 6 orang</option>
+                        <option value="7-10 orang">7 - 10 orang</option>
+                    </select>
+                </div>
+
+                <!-- Tombol Konfirmasi Reservasi -->
+                <div class="action-footer">
+                    <button type="submit" class="btn-primary">Konfirmasi Reservasi</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="../js/pinjaman.js"></script>
+</body>
+</html>

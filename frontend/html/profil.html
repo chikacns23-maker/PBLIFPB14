@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuangKu - Profil Pengguna</title>
+    <link rel="stylesheet" href="../css/profil.css">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <div class="app-container">
+
+            <!-- Header Halaman -->
+            <div class="top-header">
+                <h2>Profil Saya</h2>
+            </div>
+
+            <!-- Kartu Informasi Profil Utama -->
+            <div class="profile-card">
+                <div class="profile-avatar">👤</div>
+                <div class="profile-info">
+                    <h3 id="namaUserDisplay">Zikra</h3>
+                    <p id="emailUserDisplay">zikra11@gmail.com</p>
+                    <span class="role-badge">Pengguna Aktif</span>
+                </div>
+            </div>
+
+            <!-- Detail Informasi Akun -->
+            <div class="info-section-title">Informasi Akun</div>
+            <div class="info-details-box">
+                <div class="info-row">
+                    <span class="info-label">NIM</span>
+                    <span class="info-value" id="nimUserDisplay">230102001</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Program Studi</span>
+                    <span class="info-value" id="prodiUserDisplay">Teknik Informatika</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Nomor Telepon</span>
+                    <span class="info-value" id="telpUserDisplay">0812-3456-7890</span>
+                </div>
+            </div>
+
+            <!-- Tombol Ubah Data / Edit Profil -->
+            <button onclick="ubahDataProfil()" style="width: 100%; margin-top: 15px; padding: 12px; background-color: #1976d2; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 0.95rem;">
+                ✏️ Ubah NIM & No. Telepon
+            </button>
+
+            <!-- Pengaturan & Bantuan -->
+            <div class="info-section-title" style="margin-top: 25px;">Pengaturan & Bantuan</div>
+            <div class="menu-section">
+                <a href="reservasi-saya.html" class="menu-item">
+                    <span class="menu-icon">📅</span>
+                    <span class="menu-text">Riwayat Reservasi Saya</span>
+                    <span class="menu-arrow">›</span>
+                </a>
+                <a href="#" class="menu-item" onclick="bukaBantuan()">
+                    <span class="menu-icon">❓</span>
+                    <span class="menu-text">Pusat Bantuan & FAQ</span>
+                    <span class="menu-arrow">›</span>
+                </a>
+                <a href="#" class="menu-item" onclick="bukaTentang()">
+                    <span class="menu-icon">ℹ️</span>
+                    <span class="menu-text">Tentang Aplikasi RuangKu</span>
+                    <span class="menu-arrow">›</span>
+                </a>
+                <a href="#" class="menu-item" onclick="logoutApp()">
+                    <span class="menu-icon">🚪</span>
+                    <span class="menu-text text-danger">Keluar (Logout)</span>
+                    <span class="menu-arrow">›</span>
+                </a>
+            </div>
+
+            <!-- Navigasi Menu Bawah (Bottom Navbar) -->
+            <div class="bottom-nav">
+                <a href="beranda.html" class="nav-item">
+                    <span>🏠</span>
+                    <span>Beranda</span>
+                </a>
+                <a href="reservasi-saya.html" class="nav-item">
+                    <span>📅</span>
+                    <span>Reservasi Saya</span>
+                </a>
+                <a href="profil.html" class="nav-item active">
+                    <span>👤</span>
+                    <span>Profil</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/profil.js"></script>
+</body>
+</html>
